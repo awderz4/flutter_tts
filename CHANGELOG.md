@@ -2,9 +2,16 @@
 
 ## 4.3.0
 
-* Adds Swift Package Manager support for iOS and macOS. The iOS plugin is now
+### Features
+
+- **iOS/macOS:** Add Swift Package Manager support. The iOS plugin is now
   implemented purely in Swift (the Objective-C registration shim has been removed).
   Both platforms can be built with either Swift Package Manager or CocoaPods.
+
+### Fixes
+
+- **Android:** Support AGP 9 built-in Kotlin. The standalone Kotlin Gradle plugin is
+  only applied on older AGP or when the host sets `android.builtInKotlin=false`.
 
 ## 4.2.5
 
