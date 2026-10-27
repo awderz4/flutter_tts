@@ -10,8 +10,9 @@
 
 ### Fixes
 
-- **Android:** Support AGP 9 built-in Kotlin. The standalone Kotlin Gradle plugin is
-  only applied on older AGP or when the host sets `android.builtInKotlin=false`.
+- **Android:** Migrate to built-in Kotlin. The plugin no longer applies the Kotlin
+  Gradle plugin, so Flutter stops warning about it. Requires Flutter 3.44+.
+- **iOS/macOS:** Don't crash on an unknown `AVSpeechSynthesisVoiceGender`.
 
 ## 4.2.5
 
